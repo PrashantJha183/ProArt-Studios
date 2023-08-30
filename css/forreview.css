@@ -1,0 +1,287 @@
+main{
+    background-color: black;
+    display: flex;
+}
+.testimonials{
+    padding-left: 15%;
+    padding-top: 10%;
+    background-color: black;
+    display: flex;
+    padding-bottom: 10%;
+}
+.block-1{
+    padding-top: 8%;
+    margin-left: 17.5%;
+    width: 50%;
+    padding-right: 4%;
+}
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color: #99C34D;
+    font-weight: 700;
+}
+.subheading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    color: white;
+    line-height: 70px;
+    font-weight: 800;
+}
+.subtext{
+    margin-top: 10%;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+}
+.heading-2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+.block-2{
+    width: 50%;
+    padding-top: 7%;
+}
+.block-2 img{
+    width: 60%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.block-3{
+    margin-left: 2%;
+    width: 40%;
+    padding-right: 4%;
+}
+.block-4{
+    margin-left: -5%;
+    width: 60%;
+    padding-top: 5%;
+    padding-right: 10%;
+}
+.block-5{
+    margin-left: -5%;
+    width: 60%;
+    padding-top: 5%;
+    padding-right: 10%;
+    display: none;
+}
+.block-6{
+    margin-left: -5%;
+    width: 60%;
+    padding-top: 5%;
+    padding-right: 10%;
+    display: none;
+}
+.hid{
+    display: none;
+}
+.card{
+    padding: 20px 0 20px 0;
+    margin-right: 10%;
+    display: flex;
+    margin-top: 10%;
+}
+.card:hover{
+    border-radius: 15px;
+    background-color:  #2f302f;
+    padding: 20px 0 20px 0;
+    margin-right: 10%;
+    display: flex;
+    margin-top: 10%;
+}
+
+.card-1{
+    width: 25%;
+}
+.card-2{
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+}
+.name{
+    font-size: 21px;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+    padding-top: 10%;
+}
+.job{
+    color: #7d7e7d;
+    font-size: 18px;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+    padding-top: 2%;
+}
+.card img{ 
+    user-select: none;
+    -webkit-user-drag: none;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+ul{
+    list-style: none;
+}
+
+.testim{
+    color:#99C34D;
+    font-family: 'Poppins', sans-serif;
+    font-weight:800;
+    font-size:30px;
+    margin-left:5%;
+}
+
+
+
+@media(min-width: 200px) and (max-width: 480px){
+    main{
+        background-color: black;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .block-1{
+        padding-top: 8%;
+        margin-left: 10%;
+        padding-right: 0%;
+        margin-right: 0;
+        width: 80%;
+    }
+    .heading{
+        margin-left: 0%;
+        padding-right: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        color: #99C34D;
+        font-weight: 700;
+    }
+    .subheading{
+        font-family: 'Poppins', sans-serif;
+        font-size: 32px;
+        color: white;
+        margin-left: 0%;
+        line-height: 40px;
+        font-weight: 800;
+    }
+    .block-2 img{
+        margin-left: 20%;
+        height: 400px;
+        width: 400px;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+
+    .testimonials{
+        padding-top: 10%;
+        background-color: black;
+        display: block;
+        padding-bottom: 10%;
+    }
+    .card{
+        margin-left: -2%;
+        width: 100%;
+        padding: 0px 0 0px 0;
+        margin-right: 0%;
+        display: flex;
+        margin-top: 10%;
+    }
+    .block-3{
+        margin-left: 0%;
+        padding: 0;
+        width: 100%;
+        
+    }
+    .card-1{
+        width: 300px;
+    }
+    .card-2{
+        width: 300px;
+
+        align-items: 0;
+        text-align: left;
+    }
+    .name{
+        font-size: 30px;
+        padding-top: 2%;
+    }
+    ul{
+        padding-right: 20%;
+        
+    }
+    li{
+        margin-left: 0%;
+        padding-right: 0%;
+        
+    }
+    .job{
+        color: #7d7e7d;
+        font-size: 18px;
+        justify-content: left;
+        align-items: start;
+        text-align: left;
+        padding-top: 2%;
+    }
+    .testim{
+        color:#99C34D;
+        font-family: 'Poppins', sans-serif;
+        font-weight:800;
+        font-size:50px;
+        margin-left:0%;
+    }
+    .block-4{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: -2%;
+        margin-right: 0;
+        padding-left: 0%;
+        width: 100%;
+        padding-top: 10%;
+        padding-right: 15%;
+    }
+}
+@media(min-width: 481px) and (max-width: 767px){
+
+    /*low res tabs and ipads*/
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+
+    /*tablets ipad potrait mode*/
+}
+@media(min-width: 1025px) and (max-width: 1280px){
+    .block-2 img{
+        width: 100%;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+    .testimonials{
+        padding-left: 10%;
+        padding-top: 10%;
+        background-color: black;
+        display: flex;
+        padding-bottom: 10%;
+    }
+    .block-1{
+        padding-top: 8%;
+        margin-left: 10%;
+        width: 50%;
+        padding-right: 4%;
+    }
+    .block-2{
+        width: 50%;
+        padding-top: 10%;
+        margin-right: 5%;
+    }
+}
+
+@media(min-width: 1281px){
+
+    /*for everything*/
+}

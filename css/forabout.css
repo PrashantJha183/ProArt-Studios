@@ -1,0 +1,350 @@
+html::-webkit-scrollbar { 
+    display: none; 
+}
+.owner{
+    background-color: black;
+    display: flex;
+    height: 83.6vh;
+}
+.owner-pic{
+    margin-left: 20%;
+    width: 50%;
+    margin-bottom: 5%;
+}
+.owner-pic img{
+    user-select: none;
+    -webkit-user-drag: none;
+    margin-top: 35%;
+    width: 75%;
+    border: #99C34D solid;
+    border-radius: 5%;
+    box-shadow: 20px 15px 0px #99C34D;
+}
+.owner-info{
+    margin-left: 5%;
+    margin-right: 20%;
+    width: 50%;
+    margin-top: 11%;
+}
+
+.heading-1{
+    font-family: "Work sans", sans-serif;
+    color: white;
+    font-size:35px;
+    margin-bottom: 10%;
+}
+.heading-2{
+    width: 100%;
+    font-family: "Work sans", sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size:35px;
+    margin-bottom: 10%;
+}
+.heading-3{
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #99C34D;
+    font-size:21px;
+    margin-bottom: 10%;
+}
+
+.subtext{
+   
+    line-height: 40px;
+    color: #D9D9D9;
+    transition: 0.5ms;
+    padding-top: 5%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 0.5%;
+}
+.team{
+    display: block;
+    padding-top: 80px;
+    text-align: center;
+    background-color: black;
+}
+.team-members{
+    display: flex;
+    padding-top: 120px;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 10%;
+}
+.team-member-2{
+    display: flex;
+
+    text-align: center;
+    background-color: black;
+    padding-bottom: 10%;
+}
+.member-1{
+    display: block;
+    margin-left: 10%;
+    width: 33.33%;
+}
+.member-2{
+    display: block;
+    margin-left: -10%;
+    width: 33.33%;
+}
+.member-3{
+    display: block;
+    margin-left: -10%;
+    width: 33.33%;
+}
+.member-4{
+    display: block;
+    margin-left: 12.5%;
+    width: 50%;
+}
+.member-5{
+    display: block;
+    margin-left: -25%;
+    width: 50%;
+}
+.img-1{
+    user-select: none;
+    -webkit-user-drag: none;
+    width: 50%;
+}
+.img-2{
+    user-select: none;
+    -webkit-user-drag: none;
+    width: 33.33%;
+}
+@media(min-width: 200px) and (max-width: 480px){
+
+    .owner{
+        padding-left: 0%;
+        background-color: black;
+        display: block;
+        height: fit-content;
+        align-items: center;
+    }
+    .owner-pic{
+        margin-left: 10%;
+        width: 100%;
+       
+    }
+    .owner-info{
+        margin-left: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 100%;
+        padding-top: 7%;
+        text-align: center;
+    }
+
+    .team-members{
+        display: block;
+        padding-top: 80px;
+        text-align: center;
+        background-color: black;
+
+    }
+    .team-member-2{
+        display: block;
+        text-align: center;
+
+    }
+    .member-1{
+        display: block;
+        margin-left: 0%;
+        width: 100%;
+    
+    }
+    .member-2{
+        margin-top: 10%;
+        display: block;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .member-3{
+        margin-top: 10%;
+        display: block;
+        margin-left: 0%;
+        width: 100%;
+        padding-bottom: 20%;
+    }
+    .member-4{
+        display: block;
+        width: 140%;
+        margin-left: -20%;
+    }
+    .member-5{
+        display: block;
+        margin-top: 10%;
+        margin-left: -25%;
+        width: 150%;
+    }
+    .subtext{
+        line-height: 40px;
+        color: #D9D9D9;
+        transition: 0.5ms;
+        padding-top: 5%;
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+        padding-left: 2%;
+    }
+}
+@media(min-width: 481px) and (max-width: 767px){
+
+    /*low res tabs and ipads*/
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+
+    /*tablets ipad potrait mode*/
+}
+@media(min-width: 1025px) and (max-width: 1280px){
+    .owner-pic{
+        margin-left: 15%;
+        width: 30%;
+        margin-bottom: 5%;
+    }
+    .owner-pic img{
+        user-select: none;
+        -webkit-user-drag: none;
+        margin-top: 60%;
+        width: 125%;
+        border: #99C34D solid;
+        border-radius: 5%;
+        box-shadow: 20px 15px 0px #99C34D;
+    }
+    .owner-info{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 70%;
+        margin-top: 11%;
+    }
+    .team{
+        display: block;
+        padding-top: 15%;
+        text-align: center;
+        background-color: black;
+    }
+}
+
+@media(min-width: 1281px){
+    html::-webkit-scrollbar { 
+        display: none; 
+    }
+    .owner{
+        background-color: black;
+        display: flex;
+        height: 83.6vh;
+    }
+    .owner-pic{
+        margin-left: 20%;
+        width: 50%;
+        margin-bottom: 5%;
+    }
+    .owner-pic img{
+        user-select: none;
+        -webkit-user-drag: none;
+        margin-top: 35%;
+        width: 75%;
+        border: #99C34D solid;
+        border-radius: 5%;
+        box-shadow: 20px 15px 0px #99C34D;
+    }
+    .owner-info{
+        margin-left: 5%;
+        margin-right: 20%;
+        width: 50%;
+        margin-top: 11%;
+    }
+    
+    .heading-1{
+        font-family: "Work sans", sans-serif;
+        color: white;
+        font-size:35px;
+        margin-bottom: 10%;
+    }
+    .heading-2{
+        width: 100%;
+        font-family: "Work sans", sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size:35px;
+        margin-bottom: 10%;
+    }
+    .heading-3{
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: #99C34D;
+        font-size:21px;
+        margin-bottom: 10%;
+    }
+    
+    .subtext{
+       
+        line-height: 40px;
+        color: #D9D9D9;
+        transition: 0.5ms;
+        padding-top: 5%;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 0.5%;
+    }
+    .team{
+        display: block;
+        padding-top: 80px;
+        text-align: center;
+        background-color: black;
+    }
+    .team-members{
+        display: flex;
+        padding-top: 120px;
+        text-align: center;
+        background-color: black;
+        padding-bottom: 10%;
+    }
+    .team-member-2{
+        display: flex;
+    
+        text-align: center;
+        background-color: black;
+        padding-bottom: 10%;
+    }
+    .member-1{
+        display: block;
+        margin-left: 10%;
+        width: 33.33%;
+    }
+    .member-2{
+        display: block;
+        margin-left: -10%;
+        width: 33.33%;
+    }
+    .member-3{
+        display: block;
+        margin-left: -10%;
+        width: 33.33%;
+    }
+    .member-4{
+        display: block;
+        margin-left: 12.5%;
+        width: 50%;
+    }
+    .member-5{
+        display: block;
+        margin-left: -25%;
+        width: 50%;
+    }
+    .img-1{
+        user-select: none;
+        -webkit-user-drag: none;
+        width: 50%;
+    }
+    .img-2{
+        user-select: none;
+        -webkit-user-drag: none;
+        width: 33.33%;
+    }
+    /*for everything*/
+}

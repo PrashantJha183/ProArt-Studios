@@ -1,0 +1,336 @@
+main {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/heroback.jpg") no-repeat;
+  background-blend-mode: multiply;
+  background-size: 100%;
+  height: 100vh;
+}
+.service-hero-1 {
+  padding-top: 30rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.land-text {
+  mix-blend-mode: difference;
+  font-family: "Work sans", sans-serif;
+  font-weight: 800;
+  background-size: 100%;
+  font-size: 20rem;
+  background: linear-gradient(
+    to right,
+    rgba(152, 245, 191, 0.842),
+    rgba(152, 245, 191, 0.842),
+    rgb(252, 255, 69),
+    rgb(252, 255, 69)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.subtext {
+  font-family: "Work sans", sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+}
+.selector {
+  background-color: black;
+  height: fit-content;
+}
+.selector-list {
+  padding-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.options {
+  padding: 5px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+.layer-1 {
+  margin-left: 25%;
+  display: flex;
+}
+.layer-2 {
+  margin-left: 25%;
+  display: flex;
+}
+.layer-3 {
+  margin-left: 25%;
+  display: flex;
+  padding-bottom: 10%;
+}
+.sublayer-3 {
+  margin-top: 2%;
+  width: 50%;
+  display: block;
+}
+.sublayer-3-2 {
+  margin-top: 2%;
+  width: 50%;
+  display: block;
+  margin-right: 22%;
+}
+
+.card-1 {
+  margin-left: 2%;
+  margin-top: 5%;
+  width: 300px;
+  height: 440px;
+  border-radius: 15px;
+}
+
+.card-2 {
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 465px;
+  height: 280px;
+  border-radius: 15px;
+}
+.card-3 {
+  margin-left: -11%;
+  margin-top: 2%;
+  width: 465px;
+  height: 585px;
+  border-radius: 15px;
+}
+.start {
+  margin-left: 0%;
+}
+
+.hidden {
+  height: 0px;
+  visibility: hidden;
+}
+li.selected::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: #99c34d;
+  left: 0;
+  bottom: -7px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  animation: appear 0.2s linear;
+}
+
+@media (max-width: 62rem) {
+  main {
+    margin-top: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../images/heroback.jpg") no-repeat;
+    background-blend-mode: multiply;
+    background-size: 100%;
+    height: 28vh;
+  }
+  .service-hero-1 {
+    padding-top: 7rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .land-text {
+    mix-blend-mode: difference;
+    font-family: "Work sans", sans-serif;
+    font-weight: 800;
+    background-size: 100%;
+    font-size: 7rem;
+    background: linear-gradient(
+      to right,
+      rgba(152, 245, 191, 0.842),
+      rgba(152, 245, 191, 0.842),
+      rgb(252, 255, 69),
+      rgb(252, 255, 69)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtext {
+    font-family: "Work sans", sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .selector {
+    background-color: black;
+    height: fit-content;
+  }
+  .selector-list {
+    padding-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+  }
+  .photos {
+    margin-left: -20%;
+  }
+  .layer-1 {
+    margin-left: 17.5%;
+    display: block;
+  }
+  .layer-2 {
+    margin-left: 17.5%;
+    display: block;
+  }
+  .layer-3 {
+    margin-left: 17.5%;
+    display: block;
+    padding-bottom: 10%;
+  }
+  .card-1 {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+  }
+
+  .card-2 {
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  .card-3 {
+    margin-left: 20%;
+    margin-top: 2%;
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+  }
+  .start {
+    margin-left: 10%;
+  }
+  .change {
+    margin-left: 20%;
+  }
+  li.selected::after {
+    position: absolute;
+    content: "";
+    margin-left: 25%;
+    height: 3px;
+    width: 50%;
+    background-color: #99c34d;
+    left: 0;
+    bottom: -7px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    animation: appear 0.2s linear;
+  }
+  .options {
+    padding-top: 10%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+  .main {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+  .service-hero-1 {
+    padding: 0;
+  }
+
+  .land-text {
+    display: block;
+    margin: auto;
+    font-size: 5rem;
+    background-size: 100%;
+    text-align: center;
+    padding-top: 52px;
+  }
+
+  .subtext {
+    display: block;
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  .selector {
+    margin: 0;
+    background-color: black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+  }
+
+  .selector-list {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-size: 2 rem;
+  }
+  .options {
+    font-size: 1rem;
+  }
+
+  .all .layer-1,
+  .layer-2,
+  .layer-3,
+  .product .layer-1,
+  .layer-2,
+  .layer-3,
+  .interior .layer-1,
+  .layer-2,
+  .layer-3 .still .layer-1,
+  .layer-2,
+  .layer-3,
+  .render .layer-1,
+  .layer-2,
+  .layer-3 {
+    display: block;
+    margin: auto;
+    padding: auto;
+  }
+
+  .view-panel .all .layer-1 .start.card-1,
+  .start.card-1 {
+    height: 300px;
+    width: 300px;
+  }
+
+  .view-panel .all .layer-1 .card-1 {
+    height: 400px;
+    width: 300px;
+  }
+
+  .product .layer-1 .start.card-1 {
+    height: 300px;
+    width: 300px;
+  }
+  /* 
+  .product .sublayer-3-2 .card-3 {
+    height: 400px;
+    width: 300px;
+  } */
+}

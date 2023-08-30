@@ -1,0 +1,244 @@
+html::-webkit-scrollbar { 
+    display: none; 
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    background-color: black;
+    color: white;
+}
+.hero{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+.subtext{
+    color: white;
+    padding-top: 2.5%;
+    padding-right: 20%;
+    display: flex;
+    transition: 0.5ms;
+    font-size: 18px;
+}
+.subtext2{
+    color: white;
+    margin-left: 2px;
+    line-height: 25px;
+    padding-top: 1.5%;
+    padding-right: 20%;
+    display: flex;
+    transition: 0.5ms;
+    font-size: 18px;
+}
+.subtext3{
+    color: white;
+    margin-left: 15px;
+    line-height: 25px;
+    padding-right: 20%;
+    display: flex;
+    transition: 0.5ms;
+    font-size: 18px;
+}
+
+.section-hero{
+    margin-top: -6%;
+    color: black;
+    width: 50%;
+    margin-left: 20%;
+    font-size: 70px;
+    display: flex;
+    
+}
+
+.section-services{
+    color: black;
+    margin-right: 20%;
+    font-size: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    width: 15px;
+}
+.icon2{
+    width: 20px;
+}
+.icon4{
+    margin-top: .3%;
+    width: 30px;
+    height: 20px;
+}
+.icon3{
+    margin-right: .75%;
+    width: 25px;
+    height: 25px;
+}
+.others{
+    margin-top: 10px;
+    display: flex;
+}
+.split{
+    display: flex;
+}
+.split-1{
+    width: 50%;
+}
+.split-2{
+    width: 50%;
+}
+h3{
+    color: white;
+    font-size: 2rem;
+}
+.inp::placeholder{
+    color: black;
+}
+.inp2::placeholder{
+    color: black;
+}
+.inp{
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #e4e4e4;
+    border: none;
+    width: 600px;
+    border-radius: 5px;
+    padding: 10px 5px 10px 5px;
+}
+.inp2{
+    margin-top: 2%;
+    height: 100px;
+    margin-bottom: 2%;
+    background-color: #e4e4e4;
+    border: none;
+    padding: 10px 10px 10px 5px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.btn{
+    color: #99C34D;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 125px;
+    margin-top: 20px;
+    border: 2px solid #99C34D;
+    padding: 10px 30px 10px 30px;
+}
+.btn:hover{
+    color: black;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 125px;
+    margin-top: 20px;
+    background-color: #99C34D;
+    padding: 10px 30px 10px 30px;
+}
+
+
+@media(min-width: 200px) and (max-width: 480px){
+    main{
+        height: fit-content;
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero{
+        height: fit-content;
+        margin-top: 0;
+        display: block;
+    }
+    .section-hero{
+        height: fit-content;
+        margin-left: 5rem;
+        font-size: 5rem;
+        padding-top: 30%;
+        height: 90vh;
+        display: grid;
+        width: 80%;
+       
+        
+    }
+    .split{
+        display: block;
+    }
+    .split-1{
+        width: 100%;
+    }
+    .split-2{
+        width: 100%;
+    }
+    .section-services{
+        margin-left: 5rem;
+        margin-top: 10%;
+        font-size: 5rem;
+        align-items: center;
+        height: fit-content;
+        justify-content: center;
+    }
+    .inp{
+        color: white;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        background-color: #e4e4e4;
+        border: none;
+        width: 300px;
+        border-radius: 5px;
+        padding: 10px 5px 10px 5px;
+    }
+    .inp2{
+        margin-top: 2%;
+        height: 100px;
+        margin-bottom: 2%;
+        background-color: #e4e4e4;
+        border: none;
+        padding: 10px 10px 10px 5px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    
+}
+
+@media(max-width: 375px){
+    
+
+}
+@media(min-width: 481px) and (max-width: 767px){
+
+    /*low res tabs and ipads*/
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+
+    /*tablets ipad potrait mode*/
+}
+@media(min-width: 1025px) and (max-width: 1280px){
+    .section-hero{
+        padding-top: 10%;
+        color: black;
+        width: 50%;
+        margin-left: 10%;
+        font-size: 70px;
+        display: flex;   
+        padding-bottom: 10%;
+    }
+    .section-services{
+        padding-top: 0%;
+        color: black;
+        margin-right: 10%;
+        font-size: 5rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(min-width: 1281px){
+
+    /*for everything*/
+}
