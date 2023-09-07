@@ -35,10 +35,15 @@
     .render {
         display: none;
     }
+
+    .show {
+
+        display: none;
+    }
 </style>
 <script>
     sessionStorage.setItem("active_page", "2");
-    function showall() {
+    function showAdvertisement() {
         var elems = document.getElementsByClassName('all');
         for (var i = 0; i < elems.length; i += 1) {
             elems[i].style.display = 'block';
@@ -59,8 +64,12 @@
         for (var i = 0; i < elems.length; i += 1) {
             elems[i].style.display = 'none';
         }
+        var elems = document.getElementsByClassName('show');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'none';
+        }
     }
-    function showstill() {
+    function showFood() {
         var elems = document.getElementsByClassName('all');
         for (var i = 0; i < elems.length; i += 1) {
             elems[i].style.display = 'none';
@@ -81,8 +90,12 @@
         for (var i = 0; i < elems.length; i += 1) {
             elems[i].style.display = 'none';
         }
+        var elems = document.getElementsByClassName('show');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'none';
+        }
     }
-    function showint() {
+    function showFashion() {
         var elems = document.getElementsByClassName('all');
         for (var i = 0; i < elems.length; i += 1) {
             elems[i].style.display = 'none';
@@ -103,8 +116,12 @@
         for (var i = 0; i < elems.length; i += 1) {
             elems[i].style.display = 'none';
         }
+        var elems = document.getElementsByClassName('show');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'none';
+        }
     }
-    function showprod() {
+    function showCreatives() {
         var elems = document.getElementsByClassName('all');
         for (var i = 0; i < elems.length; i += 1) {
             elems[i].style.display = 'none';
@@ -125,8 +142,12 @@
         for (var i = 0; i < elems.length; i += 1) {
             elems[i].style.display = 'none';
         }
+        var elems = document.getElementsByClassName('show');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'none';
+        }
     }
-    function showrend() {
+    function showIndustrial() {
         var elems = document.getElementsByClassName('all');
         for (var i = 0; i < elems.length; i += 1) {
             elems[i].style.display = 'none';
@@ -144,6 +165,37 @@
             elems[i].style.display = 'none';
         }
         var elems = document.getElementsByClassName('render');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'block';
+        }
+        var elems = document.getElementsByClassName('show');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'none';
+        }
+    }
+
+    function showStill() {
+        var elems = document.getElementsByClassName('all');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'none';
+        }
+        var elems = document.getElementsByClassName('still');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'none';
+        }
+        var elems = document.getElementsByClassName('interior');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'none';
+        }
+        var elems = document.getElementsByClassName('product');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'none';
+        }
+        var elems = document.getElementsByClassName('render');
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.display = 'none';
+        }
+        var elems = document.getElementsByClassName('show');
         for (var i = 0; i < elems.length; i += 1) {
             elems[i].style.display = 'block';
         }
@@ -167,118 +219,216 @@
     <selector>
         <div class="selector">
             <ul class="selector-list">
-                <li class="options" onclick="showall()">All</li>
-                <li class="options" onclick="showstill()">Still</li>
-                <li class="options" onclick="showint()">Interior</li>
-                <li class="options" onclick="showprod()">Product</li>
-                <li class="options" onclick="showrend()">Render</li>
+                <li class="options" onclick="showAdvertisement()">Advertisement</li>
+                <li class="options" onclick="showCreatives()">Creatives</li>
+                <li class="options" onclick="showFashion()">Fashion & Lifestyle</li>
+                <li class="options" onclick="showFood()">Food & Beverages</li>
+                <li class="options" onclick="showIndustrial()">Interior & Industrial</li>
+                <li class="options" onclick="showStill()">Still</li>
             </ul>
 
             <div class="view-panel">
                 <div class="all">
                     <div class="layer-1">
-                        <img src="images/Product/Product_1.jpg" alt="" class="start card-1">
-                        <img src="images/still/9_16/Creative_2.jpg" alt="" class="card-1">
-                        <img src="images/3d Render/9_16/3D_11.jpg" alt="" class="card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Advertising\Ad_1.jpg" alt=""
+                            class="start card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Advertising\Ad_2.jpg" alt=""
+                            class="card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Advertising\Ad_3.jpg" alt=""
+                            class="card-1">
                     </div>
                     <div class="layer-2">
-                        <img src="images/interior/16_9/IMG_0289-HDR.jpg" alt="" class=" start card-2">
-                        <img src="images/3d Render/16_9/Untitled-3.jpg" alt="" class="card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Advertising\Ad_4.jpg" alt=""
+                            class=" start card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Advertising\Ad_5.jpg" alt=""
+                            class="card-2">
                     </div>
-                    <div class="layer-3">
-                        <!-- <div class="sublayer-3"> -->
-                        <img src="images/still/16_9/Creative_3.jpg" alt="" class="start card-2">
-                        <img src="images/product/Product_17.jpg" alt="" class="start card-2">
-                        <!-- </div> -->
-                        <div class="sublayer-3-2">
-                            <img src="images/interior/9_16/IMG_0266-HDR.jpg" alt="" class="card-3">
-                        </div>
+                    <div class="layer-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Advertising\Ad_6.jpg" alt=""
+                            class=" start card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Advertising\Ad_7.jpg" alt=""
+                            class="card-2">
                     </div>
                 </div>
                 <div class="product">
                     <div class="layer-1">
-                        <img src="images/Product/Product_1.jpg" alt="" class="start card-1">
-                        <img src="images/Product/Product_5.jpg" alt="" class="card-1">
-                        <img src="images/Product/Product_9.jpg" alt="" class="card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Creatives\Creative_1.jpg"
+                            alt="" class="start card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Creatives\Creative_2.jpg"
+                            alt="" class="card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Creatives\Creative_3.jpg"
+                            alt="" class="card-1">
                     </div>
                     <div class="layer-2">
-                        <img src="images/Product/Product_4.jpg" alt="" class=" start card-2">
-                        <img src="images/Product/Product_2.jpg" alt="" class="card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Creatives\Creative_4.jpg"
+                            alt="" class=" start card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Creatives\Creative_6.jpg"
+                            alt="" class="card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Creatives\Creative_10.jpg"
+                            alt="" class="card-2">
+
                     </div>
-                    <div class="layer-3">
-                        <div class="sublayer-3">
-                            <img src="images/Product/Product_17.jpg" alt="" class="start change card-2">
-                            <img src="images/Product/Product_33.jpg" alt="" class="start change card-2"
-                                style="margin-top:4%;">
-                        </div>
-                        <div class="sublayer-3-2">
-                            <img src="images/Product/Product_16.jpg" alt="" class="card-3">
-                        </div>
+                    <!-- <div class="layer-3"> -->
+                    <div class="layer-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Creatives\Creative_7.jpg"
+                            alt="" class="card-2">
                     </div>
+                    <div class="layer-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Creatives\Creative_9.jpg"
+                            alt="" class="card-2">
+
+                    </div>
+                    <!-- </div> -->
+                    <div class="layer-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Creatives\Creative_15.jpg"
+                            alt="" class=" start card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Creatives\Kids_1.jpg" alt=""
+                            class="card-2">
+                    </div>
+
+
                 </div>
                 <div class="interior">
                     <div class="layer-1">
-                        <img src="images/Interior/9_16/IMG_0149-HDR.jpg" alt="" class="start card-1">
-                        <img src="images/Interior/9_16/IMG_0159-HDR.jpg" alt="" class="card-1">
-                        <img src="images/Interior/9_16/IMG_0166-HDR.jpg" alt="" class="card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Fashion & Lifestyle\Fashion_1.jpg"
+                            alt="" class="start card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Fashion & Lifestyle\Fashion_2.jpg"
+                            alt="" class="card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Fashion & Lifestyle\Fashion_4.jpg"
+                            alt="" class="card-1">
                     </div>
                     <div class="layer-2">
-                        <img src="images/Interior/16_9/IMG_0184-HDR.jpg" alt="" class=" start card-2">
-                        <img src="images/Interior/16_9/IMG_0233-HDR.jpg" alt="" class="card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Fashion & Lifestyle\Fashion_5.jpg"
+                            alt="" class=" start card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Fashion & Lifestyle\Fashion_6.jpg"
+                            alt="" class="card-2">
                     </div>
-                    <div class="layer-3">
-                        <div class="sublayer-3">
-                            <img src="images/Interior/16_9/IMG_0289-HDR.jpg" alt="" class="start change card-2">
-                            <img src="images/Interior/16_9/IMG_0108-HDR.jpg" alt="" class="start change card-2">
-                        </div>
-                        <div class="sublayer-3-2">
-                            <img src="images/Interior/9_16/IMG_0441-HDR.jpg" alt="" class="card-3">
-                        </div>
+                    <div class="layer-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Fashion & Lifestyle\Fashion_8.jpg"
+                            alt="" class="start card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Fashion & Lifestyle\Kids_2.jpg"
+                            alt="" class="card-2">
                     </div>
+                    <div class="layer-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Fashion & Lifestyle\MB 1.jpg"
+                            alt="" class="card-3">
+                    </div>
+
                 </div>
                 <div class="still">
-                    <!-- <div class="layer-1"> -->
-                    <img src="images/still/9_16/Creative_10.jpg" alt="" class="start card-1">
-                    <img src="images/still/9_16/Creative_12.jpg" alt="" class="card-1">
-                    <img src="images/still/9_16/Creative_2.jpg" alt="" class="card-1">
-                    <!-- </div> -->
+                    <div class="layer-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Food & Beverages\Food_1.jpg"
+                            alt="" class="start card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Food & Beverages\Food_3.jpg"
+                            alt="" class="card-1">
+                    </div>
                     <div class="layer-2">
-                        <img src="images/still/16_9/Creative_1.jpg" alt="" class=" start card-2">
-                        <img src="images/still/16_9/Creative_11.jpg" alt="" class="card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Food & Beverages\Food_04.jpg"
+                            alt="" class=" start card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Food & Beverages\Food_5.jpg"
+                            alt="" class="card-2">
                     </div>
-                    <div class="layer-3">
+                    <!-- <div class="layer-3">
                         <div class="sublayer-3">
-                            <img src="images/still/16_9/Creative_3.jpg" alt="" class="start change card-2">
-                            <img src="images/still/16_9/Creative_7.jpg" alt="" class="start change card-2">
+                            <img src="Photos\Final Images for website\Final Images for website\Food & Beverages\Food_7.jpg"
+                                alt="" class="start change card-2">
+                            <img src="Photos\Final Images for website\Final Images for website\Food & Beverages\Food_11.jpg"
+                                alt="" class="change card-2">
                         </div>
-                        <div class="sublayer-3-2">
-                            <img src="images/still/9_16/Creative_6.jpg" alt="" class="card-3">
-                        </div>
+                    </div> -->
+                    <div class="sublayer-3-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Food & Beverages\Food_12.jpg"
+                            alt="" class="start card-2">
                     </div>
+                    <div class="sublayer-3-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Food & Beverages\Food_2.jpg"
+                            alt="" class="card-2">
+                    </div>
+                    <!-- </div> -->
+
+                    <div class="sublayer-3-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Food & Beverages\Food_14.jpg"
+                            alt="" class=" start card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Food & Beverages\PISTACHIO_SOCIAL.jpg"
+                            alt="" class="card-2">
+                    </div>
+
                 </div>
                 <div class="render">
                     <div class="layer-1">
-                        <img src="images/3d render/9_16/3D_1.jpg" alt="" class="start card-1">
-                        <img src="images/3d render/9_16/3D_10.jpg" alt="" class="card-1">
-                        <img src="images/3d render/9_16/3D_11.jpg" alt="" class="card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Interior & Industrial\II_3.jpeg"
+                            alt="" class="start card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Interior & Industrial\II_7.jpeg"
+                            alt="" class="card-1">
+                    </div>
+                    <div class="sublayer-3-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Interior & Industrial\II_4.jpg"
+                            alt="" class=" start card-2">
+                    </div>
+                    <div class="sublayer-3-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Interior & Industrial\II_5.jpg"
+                            alt="" class="card-2">
+                    </div>
+                    <div class="sublayer-3-2">
+
+                        <img src="Photos\Final Images for website\Final Images for website\Interior & Industrial\II_6.jpg"
+                            alt="" class="start card-2">
+                    </div>
+                    <div class="sublayer-3-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Interior & Industrial\II_8.jpg"
+                            alt="" class="card-2">
+                    </div>
+
+                    <div class="sublayer-3-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Interior & Industrial\II_9.jpg"
+                            alt="" class=" start card-2">
+                    </div>
+
+                    <div class="sublayer-3-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Interior & Industrial\II_10.jpg"
+                            alt="" class="card-2">
+                    </div>
+                </div>
+
+
+                <div class="show">
+                    <div class="layer-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Still\Product_1.jpg" alt=""
+                            class="start card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Still\Product_2.jpg" alt=""
+                            class="card-1">
+                        <img src="Photos\Final Images for website\Final Images for website\Still\Product_3.jpg" alt=""
+                            class="card-1">
                     </div>
                     <div class="layer-2">
-                        <img src="images/3d render/16_9/Untitled-1.jpg" alt="" class=" start card-2">
-                        <img src="images/3d render/16_9/Untitled-2.jpg" alt="" class="card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Still\Product_4.jpg" alt=""
+                            class=" start card-2">
+                        <img src="Photos\Final Images for website\Final Images for website\Still\Product_5.jpg" alt=""
+                            class="card-2">
                     </div>
                     <div class="layer-3">
                         <div class="sublayer-3">
-                            <img src="images/3d render/16_9/Untitled-3.jpg" alt="" class="start change card-2">
-                            <img src="images/3d render/16_9/Untitled-4.jpg" alt="" class="start change card-2">
+                            <img src="Photos\Final Images for website\Final Images for website\Still\Product_7.jpg"
+                                alt="" class="start card-2">
+                            <img src="Photos\Final Images for website\Final Images for website\Still\Product_8.jpg"
+                                alt="" class="card-2">
                         </div>
+
                         <div class="sublayer-3-2">
-                            <img src="images/3d render/9_16/3D_22.jpg" alt="" class="card-3">
+                            <img src="Photos\Final Images for website\Final Images for website\Still\Product_16.jpg"
+                                alt="" class="start card-2">
+                            <img src="Photos\Final Images for website\Final Images for website\Still\Product_13.jpg"
+                                alt="" class="card-2">
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
+
+
+
+
     </selector>
 
 </body>
