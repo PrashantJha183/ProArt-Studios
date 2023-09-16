@@ -61,6 +61,8 @@ body {
   display: flex;
   gap: 4.8rem;
   list-style: none;
+  height: 10%;
+  width: 10%;
 }
 
 ul li {
@@ -121,6 +123,14 @@ li.underline::after {
   display: none;
 }
 
+.instagram,
+.facebook,
+.linkedin {
+  color: green;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
 /*Responsive Navbar*/
 
 @media (min-width: 200px) and (max-width: 480px) {
@@ -147,8 +157,9 @@ li.underline::after {
     position: relative;
   }
   .header .logo {
-    height: 5rem;
-    width: auto;
+    height: 3rem;
+    width: 8.5rem;
+    margin-left: -5%;
   }
 
   .navbar {
@@ -194,6 +205,17 @@ li.underline::after {
     color: black;
     flex-direction: column;
     align-items: center;
+  }
+
+  .instagram,
+  .facebook,
+  .linkedin {
+    height: 2rem;
+    width: 2rem;
+  }
+  .mobile-nav-icon {
+    height: 4rem;
+    width: 4rem;
   }
 }
 

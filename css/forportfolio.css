@@ -462,6 +462,11 @@ li.selected::after {
     height: 100%;
   }
 
+  .product .layer-1 .start .card-1,
+  .product .layer-1 .card-1 {
+    display: none;
+  }
+
   .interior .layer-1 .card-3 {
     height: 100%;
     width: 60%;
